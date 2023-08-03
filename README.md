@@ -1,38 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 360 Product Viewer
 
-## Getting Started
+![Product Viewer](https://i.ibb.co/pLB9MXY/360-view.gif)
 
-First, run the development server:
+A simple and efficient 360 product viewer that allows you to upload an MP4 video showcasing the 360 view of your product. This viewer utilizes FFMPEG in the backend to generate a set of images from the video, which are then displayed in an interactive manner using the "react-360-product-viewer" package.
+
+## Features
+
+- Upload MP4 video to showcase 360 view of your product
+- Generate a set of images from the uploaded video using FFMPEG
+- Display the generated images in an interactive viewer
+- Clicking on an image shows a Bootstrap modal for a more detailed view
+
+## Demo
+
+[Link to Demo](link_to_live_demo_if_available)
+
+## Installation
+
+Before running the application, make sure you have [FFMPEG](https://www.ffmpeg.org/) installed on your system. If you haven't installed it yet, you can download it from the official website or use package managers like [Homebrew](https://brew.sh/) (macOS) or [APT](https://wiki.debian.org/Apt) (Linux).
+
+After installing FFMPEG, you need to add the installation path of FFMPEG in the backend code to ensure smooth functionality.
+
+## Usage
+
+Follow the steps below to use the 360 product viewer:
+
+1. Clone this repository to your local machine.
+2. Install the required dependencies using the package manager of your choice (e.g., npm or yarn).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Start the application.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+npm start
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+4. Access the application through your web browser. The app should be running at `http://localhost:3000` by default.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+5. On the top of the UI, you will see an upload bar. Use it to select an MP4 video file showcasing the 360 view of your product.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+6. After selecting the video, click on the "Convert" button to initiate the FFMPEG backend process, which will generate a set of images.
 
-## Learn More
+7. Once the process is complete, you will see the generated images displayed as cards below the upload bar.
 
-To learn more about Next.js, take a look at the following resources:
+8. Click on any of the image cards to view a Bootstrap modal with a more detailed and interactive 360 view of your product.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+We welcome contributions to enhance the functionality and usability of the 360 product viewer. If you find any bugs or have ideas for new features, feel free to open an issue or submit a pull request.
 
-## Deploy on Vercel
+Please make sure to follow the established coding conventions and keep the code clean and well-documented.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the [MIT License](link_to_license_file_if_any).
+
+## Acknowledgments
+
+We would like to express our gratitude to the creators of the "react-360-product-viewer" package and the FFMPEG development team for their valuable tools and contributions.
+
+
+# That would be it :)
